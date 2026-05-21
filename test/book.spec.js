@@ -10,7 +10,7 @@ describe('/api/books', () => {
         .post('/api/books')
         .set('Accept', 'application/json')
         .send({
-            name: 'Something'
+            title: 'Something'
         })
         .expect('Content-Type', restype)
         .expect(201)
@@ -28,7 +28,7 @@ describe('/api/books', () => {
         .put('/api/books/1')
         .set('Accept', 'application/json')
         .send({
-            name: 'Another'
+            title: 'Another'
         })
         .expect('Content-Type', restype)
         .expect(200)

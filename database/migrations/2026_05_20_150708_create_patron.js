@@ -8,7 +8,7 @@ async function up({context: QueryInterface}) {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    idNumber: { type: DataTypes.STRING,  allowNull: false  },
+    idNumber: { type: DataTypes.STRING,  allowNull: true  },
     fullName: { type: DataTypes.STRING,  allowNull: true  },
     email: { type: DataTypes.STRING,  allowNull: true },
     createdAt: { type: DataTypes.DATE },
